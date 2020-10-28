@@ -1,21 +1,26 @@
 let canvas = document.getElementById('tutorial');
 let context = canvas.getContext('2d');
     //net
-    for (let x = 20; x < 240; x += 20) {
-        context.moveTo(x, 20);
-        context.lineTo(x, 220);
-      }
-      
-      for (let y = 20; y < 240; y += 20) {
-        context.moveTo(20, y);
-        context.lineTo(220, y);
-      }
-      
-      context.strokeStyle = "black";
-      context.stroke();
+let x = document.getElementById("inp-x").value;
+let y = document.getElementById("inp-y").value;
+
+function make(){
+    for (let i = 40; i < x; i += 20) {
+    context.moveTo(i, 20);
+    context.lineTo(i, y);
+    }
+    for (let k = 40; k < y; k += 20) {
+    context.moveTo(20, k);
+    context.lineTo(x, k);
+    }
+    context.strokeStyle = "#151033";
+    context.stroke();
+}
+make();
     //figures
-    let fgr = canvas.getContext('2d');
-    fgr.fillRect (300, 10, 20, 20);
-    fgr.fillRect (335, 10, 40, 40);
-    fgr.fillRect (390, 10, 40, 20);
-    fgr.fillRect (300, 60, 60, 80);
+let fgr = canvas.getContext('2d');
+fgr.fillStyle = "#241b55";
+fgr.fillRect (300, 10, 20, 20);
+fgr.fillRect (335, 10, 40, 40);
+fgr.fillRect (390, 10, 40, 20);
+fgr.fillRect (300, 60, 60, 80);
