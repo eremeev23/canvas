@@ -5,23 +5,39 @@
 }
 body {
   font-family: "Raleway", sans-serif;
-  background: rgb(212, 217, 238);
-  background: linear-gradient(
-    90deg,
-    rgba(212, 217, 238, 1) 0%,
-    rgba(153, 142, 199, 1) 54%,
-    rgba(89, 83, 126, 1) 100%
-  );
+  background: #bbeaf0;
 }
 .inputs {
   margin: 45px 45px 20px 40px;
 }
-#input {
-  display: flex;
-  justify-content: start;
-  margin: 10px;
-}
+
 #tutorial {
   margin-left: 45px;
-  border: 3px solid #241b55;
+  border: 3px solid #000;
 }
+button {
+  font-family: "Raleway", sans-serif;
+  padding: 5px 24px;
+  border: none;
+  box-shadow: 0px 0px 24px #5596cc;
+  background: #bbeaf0;
+  transition: all 1s ease-in-out;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+button:hover {
+  background: #79b3e2;
+  color: #fff;
+}
+
+.form-control {
+  font-family: "Raleway", sans-serif;
+  border: none;
+  box-shadow: 0px 0px 30px #6fade0;
+  padding: 5px 24px;
+  margin-right: 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+

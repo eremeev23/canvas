@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div class="inputs">
-            <h3>Построение сетки</h3>
-            <label for="inp_x">Введите ширину:</label>
-              <input type="text" class="form-control" id="inp-x" value = 22              >
-            <label for="inp_y">Введите высоту:</label>
-              <input type="text" class="form-control" id="inp-y">
-            <button onclick="make()"  class="btn">Построить</button>
+        <h3>Построение сетки</h3>
+        <label for="inp-x">Введите ширину:</label>
+        <input type="text" class="form-control form-control-x" value="">
+        <label for="inp-y">Введите высоту:</label>
+        <input type="text" class="form-control form-control-y" value="">
+        <!-- <label for="step">Введите размер шага:</label>
+        <input type="text" class="form-control" id="step" value=""> -->
+        <button type="submit" class="btn"><i class="fas fa-check"></i></button>
     </div>
-    <canvas id="tutorial" width="700" height="700"></canvas>
+    <canvas id="tutorial" width="1000" height="800"></canvas>
 
     <script src="script.js"></script>
 </body>
+
 </html>
