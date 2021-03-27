@@ -11,9 +11,10 @@ body {
   margin: 45px 45px 20px 40px;
 }
 
-#tutorial {
+canvas {
   margin-left: 45px;
-  border: 3px solid #000;
+  border: 1px solid #5596cc;
+  box-shadow: 0px 0px 24px #5596cc;
 }
 button {
   font-family: "Raleway", sans-serif;
@@ -40,4 +41,3 @@ button:hover {
   font-size: 14px;
   border-radius: 4px;
 }
-
